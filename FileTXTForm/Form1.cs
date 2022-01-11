@@ -12,39 +12,39 @@ namespace FileTXTForm
         {
             InitializeComponent();
         }
-        
-            public void FileOutput()
+
+        public void FileOutput()
+        {
+            FileInfo fileF = new FileInfo(@"f.txt");
+            string path = @"D:\KPYP_LECTION\KPYP_LECTION\FileTXTForm\f.txt";
+            FileInfo fileinfo = new FileInfo(path);
+            if (fileinfo.Exists)
             {
-                FileInfo fileF = new FileInfo(@"f.txt");
-                string path = @"D:\KPYP_LECTION\KPYP_LECTION\FileTXTForm\f.txt";
-                FileInfo fileinfo = new FileInfo(path);
-                if (fileinfo.Exists)
+                StreamReader sr = new StreamReader(@"f.txt");
+                string line;
+                using (StreamWriter sw = new StreamWriter("g.txt"))
                 {
-                    StreamReader sr = new StreamReader(@"f.txt");
-                    string line;
-                    using (StreamWriter sw = new StreamWriter("g.txt"))
+                    while ((line = sr.ReadLine()) != null)
                     {
-                        while ((line = sr.ReadLine()) != null)
-                        {
-                            sw.WriteLine(line);
-                        }
+                        sw.WriteLine(line);
                     }
                 }
-                else
-                {
-                    MessageBox.Show("Данного файла не существует", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
             }
-            public string FileReturn()
+            else
             {
-                using (FileStream fstream = File.OpenRead(@"f.txt"))
-                {
-                    byte[] array = new byte[fstream.Length];
-                    fstream.Read(array, 0, array.Length);
-                    string textFromFile = System.Text.Encoding.UTF8.GetString(array);
-                    return textFromFile;
-                }
+                MessageBox.Show("Данного файла не существует", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+        public string FileReturn()
+        {
+            using (FileStream fstream = File.OpenRead(@"f.txt"))
+            {
+                byte[] array = new byte[fstream.Length];
+                fstream.Read(array, 0, array.Length);
+                string textFromFile = System.Text.Encoding.UTF8.GetString(array);
+                return textFromFile;
+            }
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
