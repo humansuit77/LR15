@@ -7,23 +7,20 @@ namespace Stream_writer
     {
         static void Main()
         {
-            string path = @"E:\Primer.txt";
-            string readPath = @"E:\Primer.txt";
-            string writePath = @"E:\Primer2.txt";
+            string readPath = @"D:\KPYP_LECTION\KPYP_LECTION\Stream_writer\Primer.txt";
+            string writePath = @"D:\KPYP_LECTION\KPYP_LECTION\Stream_writer\Primer2.txt";
             string text = "";
             try
             {
-                using (StreamReader sr = new StreamReader(readPath, System.Text.Encoding.Default))
+                using (StreamReader sr = new StreamReader(readPath, System.Text.Encoding.UTF8))
                 {
                     text = sr.ReadToEnd();
-
                 }
-                using (StreamWriter sw = new StreamWriter(writePath, false, System.Text.Encoding.Default))
-
+                using (StreamWriter sw = new StreamWriter(writePath, false, System.Text.Encoding.UTF8))
                 {
                     sw.WriteLine(text);
                 }
-                using (StreamWriter sw = new StreamWriter(writePath, true, System.Text.Encoding.Default))
+                using (StreamWriter sw = new StreamWriter(writePath, true, System.Text.Encoding.UTF8))
                 {
                     sw.WriteLine("Дозапись");
                     sw.Write(4.5);
@@ -33,6 +30,7 @@ namespace Stream_writer
             {
                 Console.WriteLine(e.Message);
             }
+            Console.WriteLine("Файл успешно создан");
             Console.ReadKey();
         }
     }
