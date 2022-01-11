@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileIO", "FileIO\FileIO.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "File_write", "File_write\File_write.csproj", "{5BE1E27A-13BE-4E01-A1B9-11939D78823D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serialization", "Serialization\Serialization.csproj", "{6C8BD216-816A-4E60-9A22-15CDD98E53E6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serialization_streamwrite", "Serialization\Serialization_streamwrite.csproj", "{6C8BD216-816A-4E60-9A22-15CDD98E53E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
