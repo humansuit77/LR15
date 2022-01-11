@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "File_write", "File_write\Fi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serialization_streamwrite", "Serialization\Serialization_streamwrite.csproj", "{6C8BD216-816A-4E60-9A22-15CDD98E53E6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stream_reader", "Stream_reader_writer\Stream_reader.csproj", "{D11E61E0-1920-4123-B90D-1335D7B23AB0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{6C8BD216-816A-4E60-9A22-15CDD98E53E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C8BD216-816A-4E60-9A22-15CDD98E53E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C8BD216-816A-4E60-9A22-15CDD98E53E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D11E61E0-1920-4123-B90D-1335D7B23AB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D11E61E0-1920-4123-B90D-1335D7B23AB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D11E61E0-1920-4123-B90D-1335D7B23AB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D11E61E0-1920-4123-B90D-1335D7B23AB0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
