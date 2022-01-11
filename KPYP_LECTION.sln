@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileIO", "FileIO\FileIO.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "File_write", "File_write\File_write.csproj", "{5BE1E27A-13BE-4E01-A1B9-11939D78823D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serialization", "Serialization\Serialization.csproj", "{6C8BD216-816A-4E60-9A22-15CDD98E53E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{5BE1E27A-13BE-4E01-A1B9-11939D78823D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5BE1E27A-13BE-4E01-A1B9-11939D78823D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5BE1E27A-13BE-4E01-A1B9-11939D78823D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C8BD216-816A-4E60-9A22-15CDD98E53E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C8BD216-816A-4E60-9A22-15CDD98E53E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C8BD216-816A-4E60-9A22-15CDD98E53E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C8BD216-816A-4E60-9A22-15CDD98E53E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
