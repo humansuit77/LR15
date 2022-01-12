@@ -1,1 +1,1 @@
-тексттекст метода AppendAllText ()
+My text текст метода AppendAllText ()
