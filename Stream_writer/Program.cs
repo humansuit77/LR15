@@ -1,6 +1,6 @@
 ﻿using System;
 using System.IO;
-
+//Hello world
 namespace Stream_writer
 {
     class Files
