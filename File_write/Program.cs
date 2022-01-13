@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using System;
 namespace File_write
 {
     class Files
@@ -7,6 +8,7 @@ namespace File_write
         {
             string str = "192.168.20.1";
             File.WriteAllText("D:\\KPYP_LECTION\\KPYP_LECTION\\File_write\\Primer.txt", str);
+            Console.WriteLine();
             File.AppendAllText("D:\\KPYP_LECTION\\KPYP_LECTION\\File_write\\Primer.txt", " текст метода AppendAllText ()");
         }
     }
