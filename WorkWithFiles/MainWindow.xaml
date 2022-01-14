@@ -19,27 +19,25 @@
             <StackPanel>
                 <TextBlock Text="Работа с файлами" FontSize="30" FontWeight="Bold" Margin="0 0 0 20"/>
                 <Grid Margin="0 0 0 20">
-                    <Button Content="Сохранить" HorizontalAlignment="Left"/>
-                    <Button Content="Загрузить" HorizontalAlignment="Right"/>
+                    <Button Content="Сохранить" HorizontalAlignment="Left" Click="Button_Click"/>
+                    <Button Content="Загрузить" HorizontalAlignment="Right" Click="Button_Click_1"/>
                 </Grid>
                 <StackPanel>
                     <Grid>
-                        <TextBox
+                        <TextBox x:Name="textbox1"
                             MaxWidth="320"
                             TextWrapping = "Wrap"
                             AcceptsReturn="True"
                             HorizontalAlignment="Left"
                             MinWidth="320"
-                            Height="100"
-                            Text="Skjljdfjlskdjflksd"></TextBox>
-                        <TextBox
+                            Height="100"/>
+                        <TextBox x:Name="textbox2"
                             MaxWidth="320"
                             TextWrapping = "Wrap"
                             AcceptsReturn="True"
                             MinWidth="320"
                             Height="100"
-                            HorizontalAlignment="Right"
-                            Text="Skjljdfjlskdjflksd"></TextBox>
+                            HorizontalAlignment="Right"/>
                     </Grid>
                 </StackPanel>
             </StackPanel>
