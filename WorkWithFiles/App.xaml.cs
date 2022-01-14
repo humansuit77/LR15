@@ -13,6 +13,8 @@ namespace WorkWithFiles
     /// </summary>
     //изменено
     //Добавил
+    //Добавил
+
     public partial class App : Application
     {
     }
