@@ -11,6 +11,7 @@ namespace WorkWithFiles
     /// <summary>
     /// Логика взаимодействия для App.xaml
     /// </summary>
+    //изменено
     public partial class App : Application
     {
     }
