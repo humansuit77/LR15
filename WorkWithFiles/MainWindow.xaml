@@ -25,14 +25,19 @@
                 <StackPanel>
                     <Grid>
                         <TextBox
+                            MaxWidth="320"
+                            TextWrapping = "Wrap"
+                            AcceptsReturn="True"
                             HorizontalAlignment="Left"
                             MinWidth="320"
                             Height="100"
                             Text="Skjljdfjlskdjflksd"></TextBox>
                         <TextBox
+                            MaxWidth="320"
+                            TextWrapping = "Wrap"
+                            AcceptsReturn="True"
                             MinWidth="320"
                             Height="100"
-                            
                             HorizontalAlignment="Right"
                             Text="Skjljdfjlskdjflksd"></TextBox>
                     </Grid>
