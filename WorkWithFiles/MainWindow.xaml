@@ -30,15 +30,35 @@
                             AcceptsReturn="True"
                             HorizontalAlignment="Left"
                             MinWidth="320"
-                            Height="100"/>
+                            Height="100"
+                            materialDesign:TextFieldAssist.HasClearButton="True"
+                            materialDesign:HintAssist.Hint="Введите текст сюда"
+                            Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                            ScrollViewer.VerticalScrollBarVisibility="Auto" />
                         <TextBox x:Name="textbox2"
                             MaxWidth="320"
                             TextWrapping = "Wrap"
                             AcceptsReturn="True"
                             MinWidth="320"
                             Height="100"
-                            HorizontalAlignment="Right"/>
+                            HorizontalAlignment="Right"
+                            materialDesign:TextFieldAssist.HasClearButton="True"
+                            materialDesign:HintAssist.Hint="Вывод из файла"
+                            Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                            ScrollViewer.VerticalScrollBarVisibility="Auto" />
                     </Grid>
+                    <StackPanel Margin="0,14,0,-11">
+                        <Grid >
+                            <Button Content="Расположение файла" HorizontalAlignment="Left" Click="Button_Click_3"  Height="32" VerticalAlignment="Bottom"></Button>
+                            <TextBox x:Name="textbox3"
+                            MaxWidth="410"
+                            MinWidth="410"
+                            HorizontalAlignment="Right"
+                            TextWrapping = "Wrap"
+                            AcceptsReturn="True" Cursor="IBeam"/>
+                        </Grid>
+                    </StackPanel>
+
                 </StackPanel>
             </StackPanel>
         </materialDesign:Card>

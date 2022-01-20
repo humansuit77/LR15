@@ -43,5 +43,12 @@ namespace WorkWithFiles
                 line = sr.ReadLine();
             }
         }
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            String path = System.IO.Path.Combine(Directory.GetCurrentDirectory(), "func.txt");
+            textbox3.Text = path;
+
+        }
+
     }
 }
